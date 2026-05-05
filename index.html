@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexaris Digital</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -12,17 +14,15 @@
       background-color: #0B1F3B;
       color: white;
     }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 60px;
+      background: #061426;
     }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      color: #2F6DF6;
-    }
+
     .logo {
       display: flex;
       align-items: center;
@@ -32,25 +32,25 @@
     .logo img {
       height: 40px;
     }
+
     nav a {
       margin-left: 20px;
       text-decoration: none;
       color: white;
       font-weight: 500;
     }
+
     .hero {
       text-align: center;
       padding: 100px 20px;
       background: linear-gradient(135deg, #0B1F3B, #1C3D6E);
     }
+
     .hero h2 {
       font-size: 42px;
       font-family: 'Montserrat', sans-serif;
     }
-    .hero p {
-      font-size: 18px;
-      margin: 20px 0;
-    }
+
     .btn {
       background: #2F6DF6;
       padding: 12px 25px;
@@ -59,22 +59,45 @@
       color: white;
       font-weight: bold;
     }
+
     .section {
-      padding: 60px;
+      padding: 60px 20px;
       text-align: center;
     }
+
     .cards {
       display: flex;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
     }
+
     .card {
       background: #1C3D6E;
-      padding: 30px;
+      padding: 25px;
       border-radius: 10px;
       width: 280px;
     }
+
+    .blog-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .blog-card {
+      background: #1C3D6E;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: left;
+    }
+
+    .blog-card h3 {
+      font-family: 'Montserrat';
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -87,18 +110,24 @@
 <body>
 
 <header>
-  <h1>Nexaris Digital</h1>
+  <div class="logo">
+    <!-- REEMPLAZA "logo.png" con el nombre real de tu archivo -->
+    <img src="logo.png" alt="Nexaris Digital Logo">
+    <strong>Nexaris Digital</strong>
+  </div>
+
   <nav>
     <a href="#">Inicio</a>
     <a href="#">Servicios</a>
-    <a href="#">Nosotros</a>
+    <a href="#">Blog</a>
     <a href="#">Contacto</a>
   </nav>
 </header>
 
 <section class="hero">
   <h2>Transformación Digital Estratégica</h2>
-  <p>Ayudamos a organizaciones a integrar tecnología, optimizar procesos y liderar la innovación.</p>
+  <p>Integramos tecnología, estrategia e innovación para organizaciones modernas.</p>
+  <br>
   <a href="#" class="btn">Solicitar asesoría</a>
 </section>
 
@@ -115,24 +144,43 @@
     </div>
     <div class="card">
       <h3>Gestión del Cambio</h3>
-      <p>Acompañamiento en adopción tecnológica y desarrollo de capacidades.</p>
+      <p>Acompañamiento en adopción tecnológica.</p>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <h2>¿Por qué Nexaris?</h2>
-  <p>Combinamos estrategia, tecnología y gestión organizacional para lograr resultados reales.</p>
+<!-- BLOG -->
+<section class="section" id="blog">
+  <h2>Blog</h2>
+
+  <div class="blog-container">
+
+    <div class="blog-card">
+      <h3>5 errores en la transformación digital</h3>
+      <p>Descubre los errores más comunes que cometen las organizaciones al digitalizarse.</p>
+    </div>
+
+    <div class="blog-card">
+      <h3>Qué es realmente la transformación digital</h3>
+      <p>Más allá de la tecnología: estrategia, cultura y procesos.</p>
+    </div>
+
+    <div class="blog-card">
+      <h3>El rol del liderazgo en la innovación</h3>
+      <p>Cómo los líderes impulsan la adopción tecnológica.</p>
+    </div>
+
+  </div>
 </section>
 
 <section class="section">
   <h2>Contacto</h2>
-  <p>Contáctanos para iniciar tu proceso de transformación digital.</p>
-  <a href="#" class="btn">Escríbenos</a>
+  <p>Inicia tu proceso de transformación digital hoy.</p>
+  <a href="#" class="btn">Contáctanos</a>
 </section>
 
 <footer>
-  © 2026 Nexaris Digital | Transformación Digital y Tecnología
+  © 2026 Nexaris Digital
 </footer>
 
 </body>
